@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de Cursos</title>
+    <link rel="stylesheet" href="estilosIA.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="contacto.html">Información de Contacto</a></li>
+          <li>
+            <a href="quien-mantiene-el-sitio.html">Quién Mantiene el Sitio</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Catálogo de Cursos</h1>
+
+        <!-- Selector de categoría -->
+        <input type="radio" id="ingles" name="categoria" checked />
+        <label for="ingles">Inglés</label>
+
+        <input type="radio" id="frances" name="categoria" />
+        <label for="frances">Francés</label>
+
+        <!-- Lista de cursos -->
+        <div class="cursos" id="cursos-ingles">
+          <div class="curso ingles">
+            <h3>Curso de Inglés 1</h3>
+            <a href="programas/curso-ingles-1.pdf">Enlace</a>
+          </div>
+          <div class="curso ingles">
+            <h3>Curso de Inglés 2</h3>
+            <a href="programas/curso-ingles-2.pdf">Enlace</a>
+          </div>
+          <div class="curso ingles">
+            <h3>Curso de Inglés 3</h3>
+            <a href="programas/curso-ingles-3.pdf">Enlace</a>
+          </div>
+        </div>
+
+        <div class="cursos" id="cursos-frances">
+          <div class="curso frances">
+            <h3>Curso de Francés 1</h3>
+            <a href="programas/curso-frances-1.pdf">Enlace</a>
+          </div>
+          <div class="curso frances">
+            <h3>Curso de Francés 2</h3>
+            <a href="programas/curso-frances-2.pdf">Enlace</a>
+          </div>
+          <div class="curso frances">
+            <h3>Curso de Francés 3</h3>
+            <a href="programas/curso-frances-3.pdf">Enlace</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

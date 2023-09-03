@@ -1,0 +1,214 @@
+/* Estilo para el cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* Estilo para el encabezado (barra de navegación) */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Estilo para la sección principal */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* Estilos para los enlaces en la barra de navegación */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para las categorías de cursos */
+.categorias {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.categorias a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.categorias a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para los cursos */
+.cursos {
+  display: none;
+}
+
+.cursos h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.curso {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+}
+
+/* Mostrar cursos según la categoría seleccionada */
+#cursos-ingles:target {
+  display: block;
+}
+
+#cursos-frances:target {
+  display: block;
+}
+
+/* Estilo para el formulario */
+.formulario {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.formulario h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.formulario label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.formulario textarea {
+  resize: vertical;
+}
+
+.formulario input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* ... Estilos previos ... */
+
+/* Selector de categoría */
+.categorias input[type="radio"] {
+  display: none;
+}
+
+.categorias label {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+
+.categorias label:hover {
+  background-color: #555;
+}
+
+/* Mostrar cursos según la categoría seleccionada */
+.cursos {
+  display: none;
+}
+
+/* Mostrar cursos de inglés cuando se selecciona la categoría "Inglés" */
+input#ingles:checked ~ .cursos#cursos-ingles {
+  display: block;
+}
+
+/* Mostrar cursos de francés cuando se selecciona la categoría "Francés" */
+input#frances:checked ~ .cursos#cursos-frances {
+  display: block;
+}
+
+/* Estilo para los cursos */
+.curso {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+}
+
+/* Estilos para los cursos de inglés */
+.curso.ingles {
+  display: none;
+}
+
+/* Mostrar cursos de inglés cuando se selecciona la categoría "Inglés" */
+input#ingles:checked ~ .cursos#cursos-ingles .curso.ingles {
+  display: block;
+}
+
+/* Estilos para los cursos de francés */
+.curso.frances {
+  display: none;
+}
+
+/* Mostrar cursos de francés cuando se selecciona la categoría "Francés" */
+input#frances:checked ~ .cursos#cursos-frances .curso.frances {
+  display: block;
+}
