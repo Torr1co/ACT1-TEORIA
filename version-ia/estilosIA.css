@@ -212,3 +212,61 @@ input#ingles:checked ~ .cursos#cursos-ingles .curso.ingles {
 input#frances:checked ~ .cursos#cursos-frances .curso.frances {
   display: block;
 }
+
+/* Media queries para hacer responsive */
+@media screen and (max-width: 768px) {
+  /* Estilo para la barra de navegación en dispositivos móviles */
+  header {
+    padding: 10px 0;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    font-size: 18px;
+    margin-right: 0;
+  }
+
+  /* Estilo para la sección principal en dispositivos móviles */
+  main {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  /* Estilo para el formulario en dispositivos móviles */
+  .formulario {
+    padding: 15px;
+    display: grid;
+  }
+
+  .formulario h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .formulario input[type="text"],
+  .formulario input[type="email"],
+  .formulario textarea {
+    font-size: 14px;
+    width: auto;
+  }
+
+  .formulario input[type="submit"] {
+    padding: 8px 16px;
+  }
+}
